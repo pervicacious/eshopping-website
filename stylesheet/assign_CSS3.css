@@ -1,0 +1,90 @@
+/* 4 SECTIONS */
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    display: table;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .row {
+    display: table-row;
+    height: 50%;
+  }
+  
+  .row:nth-child(1) {
+    /* background-color: #eee; */
+  }
+  
+  .row:nth-child(2) {
+    /* background-color: #ddd; */
+  }
+  .row:nth-child(3) {
+    /* background-color: #eee; */
+  }
+  
+  .row:nth-child(4) {
+    /* background-color: #ddd; */
+  }
+  
+  /* NAV BAR */
+  ul {
+  
+    list-style-type: none;
+    padding: 0;
+    background-color:black;
+    overflow:hidden;
+    color:white;
+    display:flex;
+   
+  }
+  li{
+      /* display:inline; */
+       float: left;
+       flex:10;
+  }
+  li a{
+      display:block;
+      color:white;
+      text-align:center;
+      padding:14px 16px;
+      text-decoration:none;
+  }
+  li a:hover{
+  background-color:dimgray;
+  color:white;
+  }
+  
+  /* TOP */
+  
+  .top header{
+      float:left;
+      font-size:200%;
+      font-style: italic; font-weight:bold;
+      
+  }
+   .top input[type=text]{
+      
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 12px;
+    border:1px solid black;
+  } 
+  .top > div{   
+      float:right;
+  }
+  
+  .carousel {
+    width:740px;
+    height:560px;
+    margin:auto;
+  }
+  .car{
+      background-color: rgb(133, 127, 127);
+  }
