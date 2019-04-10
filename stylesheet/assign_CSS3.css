@@ -1,4 +1,5 @@
 /* 4 SECTIONS */
+/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
 html {
     height: 100%;
     width: 100%;
@@ -16,48 +17,91 @@ html {
     display: table-row;
     height: 50%;
   }
+
+  html, body {
+    /* height: 100%; */
+    /* font-size: 14px; */
+    font-family: "Roboto";    
+    -webkit-font-smoothing: subpixel-antialiased;
+    padding: 0;
+}
+h1{
+    font-weight: 500;
+}
+
   
-  .row:nth-child(1) {
-    /* background-color: #eee; */
+  /* .row:nth-child(1) {
+    background-color: #eee;
   }
   
   .row:nth-child(2) {
-    /* background-color: #ddd; */
+    background-color: #ddd;
   }
   .row:nth-child(3) {
-    /* background-color: #eee; */
+    background-color: #eee;
   }
   
   .row:nth-child(4) {
-    /* background-color: #ddd; */
-  }
+    background-color: #ddd;
+  } */
+
+
+  /* TOP BAR */
+#topbar{
+    background-color:lightgrey;
+}
+#topbar a{
+    color:black;
+    /* background-color: lightgray; */
+    letter-spacing:1px;
+    font-size:14px;
+}
+#topbar ul{
+     display:flex; 
+    float:right;
+    text-align:right;
+    padding:0px;
+    margin-right:5px;
+    /* justify-content:space-between;  */
+    list-style-type: none;
+    background-color: rgb(247, 243, 243);
+}
+#topbar .fas {
+    /* color:#2FDAB8; */
+    margin-right:10px;
+}
+#topbar ul li{
+    padding: 4px; 
+    border-right:1px solid grey;  
+    
+}
   
   /* NAV BAR */
-  ul {
+ ul.navbar{
   
     list-style-type: none;
     padding: 0;
-    background-color:black;
+    background-color:rgb(247, 243, 243);
     overflow:hidden;
-    color:white;
+    color:black;
     display:flex;
    
   }
-  li{
+ ul.navbar li{
       /* display:inline; */
        float: left;
-       flex:10;
+       flex:6;
   }
-  li a{
+  ul.navbar li a{
       display:block;
-      color:white;
+      color:black;
       text-align:center;
       padding:14px 16px;
       text-decoration:none;
   }
-  li a:hover{
-  background-color:dimgray;
-  color:white;
+  ul.navbar li a:hover{
+  background-color:white;
+  color:red;
   }
   
   /* TOP */
@@ -70,21 +114,124 @@ html {
   }
    .top input[type=text]{
       
-    padding: 6px;
+    padding: 1px;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 12px;
     border:1px solid black;
+    height:30px;
+    width:250px;
   } 
+  .top button{
+    background: #f78828;
+    color:white;
+    
+  }
   .top > div{   
       float:right;
   }
   
-  .carousel {
-    width:740px;
-    height:560px;
-    margin:auto;
+  
+  /* SECTIONS */
+  .pic{
+      margin-top:70px;
+      height: 225px;
+      width: 410px;
+      border-radius:4px;
   }
-  .car{
-      background-color: rgb(133, 127, 127);
+
+  /* .carousel-item{
+    max-width:100%;
+    height:auto;
+  } */
+  /* #car .carousel{
+
+  } */
+
+
+  /* ANIMTAION */
+  .category:hover img {
+    transform: scale(1.01);
+    /* box-shadow: 0px 30px 5px rgba(0,0,0,0.1);  */
+}
+.card:hover{
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1); 
+}
+.category img {
+    background: #fff;
+    transition: all ease-in-out 0.25s;
+/* transition-property: all;
+transition-duration: 0.25s;
+transition-timing-function: ease-in-out;
+transition-delay: 0s; */
+}
+
+.b div{
+    box-sizing:border-box;
+}
+ /* div.b:hover{
+    box-shadow: 0px 30px 5px rgba(0,0,0,0.1);
+}  */
+  
+
+  /* FOOTER */
+  /* .email > button  */
+  .btn{
+    border-radius: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #f78828;
+    color: #f9f9f9;
+    border: 1px solid #da7532;
+    padding: 0 14px;
+    display: inline-block;
+    height: 28px;
+    vertical-align: middle;
+    width: auto;
+    margin: -6px -4px 0;
+}
+.email input[type=email]{
+    font-size: 14px;
+    height:28px;
+}
+
+  .sociable ul{
+    list-style-type: none;
+    display:flex;
+  }
+  .sociable ul li{
+      padding:2px;
+  }
+  .fab{
+    font-size:250%;
+  }
+  .fa-facebook-square,.fa-linkedin{
+    color:rgb(6, 6, 90);
+  }
+  
+  .flex-container > div{
+    margin: 2px;
+    padding: 5px;
+    font-size:10px;
+    
+}
+.flex-container{
+    display:flex;
+    background-color: rgb(247, 243, 243);
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* justify-content:space-around; */
+    justify-content: space-between;
+}
+
+#pay .fab{
+    font-size:220%;
+}
+#pay ul{
+    list-style-type: none;
+    display:flex;
+  }
+#pay ul li{
+      padding:2px;
   }
